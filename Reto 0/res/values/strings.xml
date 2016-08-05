@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Reto 0</string>
+    <string name="mensaje_hello_world">Hola mundo, Reto 0!</string>
+    <string name="mensaje_author">Autor: Christian Ortega</string>
 </resources>
