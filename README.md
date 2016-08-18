@@ -18,3 +18,4 @@ Los siguientes recursos pueden ser de utilidad para ejecutar el código fuente d
 - [Start developing Android apps on Fedora in 10 minutes](https://fedoramagazine.org/start-developing-android-apps-on-fedora-in-10-minutes/)
 - [Get Started with Android application development using Linux and Android SDK ](https://linuxconfig.org/get-started-with-android-application-development-using-linux-and-android-sdk)
 - [Instalación de soporte para Android en el IDE Netbeans](https://bitbucket.org/nbandroid/nbandroid/wiki/Installation)
+- [Sitio web del curso](https://sites.google.com/site/movilesunal20162/)
