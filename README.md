@@ -10,6 +10,7 @@ A continuación se indica el contenido del repositorio:
 -  **Reto 0:** El primer taller/reto del curso. Consiste en la elaboración de un "Hola mundo" en la plataforma _Android_.
 -  **Reto 1:** Este reto consiste en crear la propuesta del proyecto final del curso: una aplicación móvil.
 -  **Reto 2:** Este reto trata sobre crear el prototipo de la apliación del proyecto final y sobre crear, además, el modelo canvas de dicha aplicación.
+-  **Reto 3:** Este reto trata sobre crear una apliación básica en la plataforma Android que permita al usuario jugar triqui contra la computadora.
 -  **LICENSE:** Archivo de licenciamiento del contenido de este repositorio.
 
 ## Recursos
