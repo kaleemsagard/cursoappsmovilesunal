@@ -38,3 +38,4 @@ captures/
 
 # Keystore files
 *.jks
+/Reto 3/AndroidTicTacToe-Tutorial2/.nb-gradle/
