@@ -21,5 +21,12 @@
     <string name="nombre_humano">Jugador</string>
     <string name="nombre_computador">Bugdroid</string>
     <string name="empate">Empates</string>
+    <string name="difficulty_choose">Dificultad</string>
+    <string name="difficulty_easy">Fácil</string>
+    <string name="difficulty_harder">Difícil</string>
+    <string name="difficulty_expert">Nivel Dios</string>
+    <string name="quit_question">¿Desea abadonar la diversión?</string>
+    <string name="yes">Sí...</string>
+    <string name="no">¡Ni loco!</string>
 
 </resources>
