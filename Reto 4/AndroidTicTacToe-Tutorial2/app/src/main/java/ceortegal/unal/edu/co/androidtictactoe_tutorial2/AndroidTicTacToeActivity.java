@@ -1,11 +1,13 @@
 package ceortegal.unal.edu.co.androidtictactoe_tutorial2;
 
 import android.app.Dialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.graphics.Color;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -18,6 +20,7 @@ public class AndroidTicTacToeActivity extends AppCompatActivity {
 
     static final int DIALOG_DIFFICULTY_ID = 0;
     static final int DIALOG_QUIT_ID = 1;
+    static final int DIALOG_ABOUT_ID = 2;
 
     // Represents the internal state of the game
     private TicTacToeGame mGame;
@@ -71,7 +74,6 @@ public class AndroidTicTacToeActivity extends AppCompatActivity {
                         getResources().getString(R.string.difficulty_harder),
                         getResources().getString(R.string.difficulty_expert)};
 
-                // TODO: Set selected, an integer (0 to n-1), for the Difficulty dialog.
                 // selected is the radio button that should be selected.
                 int selected = mGame.getDifficultyLevel().ordinal();
 
@@ -80,7 +82,6 @@ public class AndroidTicTacToeActivity extends AppCompatActivity {
                             public void onClick(DialogInterface dialog, int item) {
                                 dialog.dismiss();   // Close dialog
 
-                                // TODO: Set the diff level of mGame based on which item was selected.
                                 if(item == 0) {
                                     mGame.setDifficultyLevel(TicTacToeGame.DifficultyLevel.Easy);
                                 } else if(item == 1) {
@@ -94,6 +95,18 @@ public class AndroidTicTacToeActivity extends AppCompatActivity {
                                         Toast.LENGTH_SHORT).show();
                             }
                         });
+                dialog = builder.create();
+
+                break;
+
+            case DIALOG_ABOUT_ID:
+                // Create the about confirmation dialog
+
+                Context context = getApplicationContext();
+                LayoutInflater inflater = (LayoutInflater) context.getSystemService(LAYOUT_INFLATER_SERVICE);
+                View layout = inflater.inflate(R.layout.about_dialog, null);
+                builder.setView(layout);
+                builder.setPositiveButton("OK", null);
                 dialog = builder.create();
 
                 break;
@@ -138,6 +151,9 @@ public class AndroidTicTacToeActivity extends AppCompatActivity {
                 return true;
             case R.id.quit:
                 showDialog(DIALOG_QUIT_ID);
+                return true;
+            case R.id.about:
+                showDialog(DIALOG_ABOUT_ID);
                 return true;
         }
         return false;

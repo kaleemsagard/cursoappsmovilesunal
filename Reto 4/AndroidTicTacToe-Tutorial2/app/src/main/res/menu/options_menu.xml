@@ -6,7 +6,9 @@
     <item android:id="@+id/ai_difficulty"
         android:title="Dificultad" />
     <!--android:icon="@drawable/difficulty_level"  /-->
+    <item android:id="@+id/about"
+        android:title="Acerca de..." />
+    <!--android:icon="@drawable/quit_game" /-->
     <item android:id="@+id/quit"
         android:title="Salir" />
-    <!--android:icon="@drawable/quit_game" /-->
 </menu>
