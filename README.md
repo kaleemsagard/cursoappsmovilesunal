@@ -12,6 +12,7 @@ A continuación se indica el contenido del repositorio:
 -  **Reto 2:** Este reto trata sobre crear el prototipo de la apliación del proyecto final y sobre crear, además, el modelo canvas de dicha aplicación.
 -  **Reto 3:** Este reto trata sobre crear una apliación básica en la plataforma Android que permita al usuario jugar triqui contra la computadora.
 -  **Reto 4:** Este reto trata de mejorar el reto 3 incorporando más opciones de menú y con ello nueva lógica del juego.
+-  **Reto 5:** Este reto trata de mejorar el reto 4 incorporando imágenes personalizadas y sonidos para las acciones ejecutadas.
 -  **LICENSE:** Archivo de licenciamiento del contenido de este repositorio.
 
 ## Recursos
