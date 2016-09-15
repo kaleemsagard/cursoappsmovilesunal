@@ -44,15 +44,13 @@ public class TicTacToeGame {
         int move = -1;
 
         for (int i = 0; i < BOARD_SIZE; i++) {
-            if (move != -1) {
-                if (mBoard[i] != HUMAN_PLAYER && mBoard[i] != COMPUTER_PLAYER) {
-                    char curr = mBoard[i];   // Save the current number
-                    mBoard[i] = HUMAN_PLAYER;
-                    if (checkForWinner() == 2) {
-                        move = i;
-                    }
-                    mBoard[i] = curr;
+            if (mBoard[i] != HUMAN_PLAYER && mBoard[i] != COMPUTER_PLAYER) {
+                char curr = mBoard[i];   // Save the current number
+                mBoard[i] = HUMAN_PLAYER;
+                if (checkForWinner() == 2) {
+                    move = i;
                 }
+                mBoard[i] = curr;
             }
         }
 
@@ -83,15 +81,13 @@ public class TicTacToeGame {
         int move = -1;
 
         for (int i = 0; i < BOARD_SIZE; i++) {
-            if (move != -1) {
-                if (mBoard[i] != HUMAN_PLAYER && mBoard[i] != COMPUTER_PLAYER) {
-                    char curr = mBoard[i];
-                    mBoard[i] = COMPUTER_PLAYER;
-                    if (checkForWinner() == 3) {
-                        move = i;
-                    }
-                    mBoard[i] = curr;
+            if (mBoard[i] != HUMAN_PLAYER && mBoard[i] != COMPUTER_PLAYER) {
+                char curr = mBoard[i];
+                mBoard[i] = COMPUTER_PLAYER;
+                if (checkForWinner() == 3) {
+                    move = i;
                 }
+                mBoard[i] = curr;
             }
         }
 
