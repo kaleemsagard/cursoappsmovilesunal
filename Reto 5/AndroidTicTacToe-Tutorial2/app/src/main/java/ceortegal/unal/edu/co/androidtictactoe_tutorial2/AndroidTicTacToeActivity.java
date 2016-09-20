@@ -25,36 +25,26 @@ public class AndroidTicTacToeActivity extends AppCompatActivity {
     // Represents the internal state of the game
     private TicTacToeGame mGame;
 
-    // Buttons making up the board
-    private Button mBoardButtons[];
-
     // Various text displayed
     private TextView mInfoTextView;
     private TextView mHumanScoreTextView;
     private TextView mComputerScoreTextView;
     private TextView mTiesScoreTextView;
+    private BoardView mBoardView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_android_tic_tac_toe);
 
-        mBoardButtons = new Button[TicTacToeGame.BOARD_SIZE];
-        mBoardButtons[0] = (Button) findViewById(R.id.one);
-        mBoardButtons[1] = (Button) findViewById(R.id.two);
-        mBoardButtons[2] = (Button) findViewById(R.id.three);
-        mBoardButtons[3] = (Button) findViewById(R.id.four);
-        mBoardButtons[4] = (Button) findViewById(R.id.five);
-        mBoardButtons[5] = (Button) findViewById(R.id.six);
-        mBoardButtons[6] = (Button) findViewById(R.id.seven);
-        mBoardButtons[7] = (Button) findViewById(R.id.eight);
-        mBoardButtons[8] = (Button) findViewById(R.id.nine);
-
         mInfoTextView = (TextView) findViewById(R.id.information);
         mHumanScoreTextView = (TextView) findViewById(R.id.state_human_wins_value);
         mComputerScoreTextView = (TextView) findViewById(R.id.state_bugdroid_wins_value);
         mTiesScoreTextView = (TextView) findViewById(R.id.state_ties_value);
+
         mGame = new TicTacToeGame();
+        mBoardView = (BoardView) findViewById(R.id.board);
+        mBoardView.setGame(mGame);
 
         startNewGame();
     }
@@ -175,12 +165,8 @@ public class AndroidTicTacToeActivity extends AppCompatActivity {
     private void startNewGame() {
         mGame.clearBoard();
 
-        // Reset all buttons
-        for (int i = 0; i < mBoardButtons.length; i++) {
-            mBoardButtons[i].setText("");
-            mBoardButtons[i].setEnabled(true);
-            mBoardButtons[i].setOnClickListener(new ButtonClickListener(i));
-        }
+        mGame.clearBoard();
+        mBoardView.invalidate();   // Redraw the board
 
         // Human goes first
         mInfoTextView.setText(R.string.primer_turno_humano);
