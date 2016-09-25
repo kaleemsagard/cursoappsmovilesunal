@@ -86,9 +86,10 @@
 
     <ceortegal.unal.edu.co.androidtictactoe_tutorial2.BoardView
         android:id="@+id/play_grid"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:layout_marginTop="5dp"/>
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal" />
 
 
     <TextView android:id="@+id/information"

@@ -1,4 +1,17 @@
+package ceortegal.unal.edu.co.androidtictactoe_tutorial2;
+
+import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
+import android.graphics.Rect;
+import android.util.AttributeSet;
 import android.view.View;
+
+import ceortegal.unal.edu.co.androidtictactoe_tutorial2.R;
+import ceortegal.unal.edu.co.androidtictactoe_tutorial2.TicTacToeGame;
 
 public class BoardView extends View {
 
@@ -48,9 +61,8 @@ public class BoardView extends View {
         int cellWidth = boardWidth / 3;
         canvas.drawLine(cellWidth, 0, cellWidth, boardHeight, mPaint);
         canvas.drawLine(cellWidth * 2, 0, cellWidth * 2, boardHeight, mPaint);
-
-        //TODO: Draw the two horizontal board lines
-
+        canvas.drawLine(0, cellWidth, boardWidth, cellWidth, mPaint);
+        canvas.drawLine(0, cellWidth * 2, boardWidth, cellWidth * 2, mPaint);
 
         // Draw all the X and O images
         for (int i = 0; i < TicTacToeGame.BOARD_SIZE; i++) {
@@ -58,10 +70,10 @@ public class BoardView extends View {
             int row = i / 3;
 
             // Define the boundaries of a destination rectangle for the image
-            int left = 0;
-            int top = 0;
-            int right = 0;
-            int bottom = 0;
+            int left = cellWidth * col;
+            int top = cellWidth * row;
+            int right = cellWidth * (col + 1);
+            int bottom = cellWidth * (row + 1);
 
             if (mGame != null && mGame.getBoardOccupant(i) == TicTacToeGame.HUMAN_PLAYER) {
                 canvas.drawBitmap(mHumanBitmap,

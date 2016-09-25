@@ -1,5 +1,7 @@
 package ceortegal.unal.edu.co.androidtictactoe_tutorial2;
 
+import android.os.Handler;
+
 import java.util.Random;
 
 /**
@@ -13,6 +15,8 @@ public class TicTacToeGame {
     private int mHumanWins = 0;
     private int mBugdroidWins = 0;
     private int mTies = 0;
+
+    private char mPlayerTurn;
 
     public static final int BOARD_SIZE = 9;
     public static final char HUMAN_PLAYER = 'X';
@@ -33,6 +37,7 @@ public class TicTacToeGame {
         for (int i = 0; i < mBoard.length; i++) {
             mBoard[i] = TicTacToeGame.OPEN_SPOT;
         }
+        mPlayerTurn = HUMAN_PLAYER;
     }
 
     /**
@@ -99,11 +104,21 @@ public class TicTacToeGame {
      *
      * @param player - The HUMAN_PLAYER or COMPUTER_PLAYER
      * @param location - The location (0-8) to place the move
+     * @return {@code true} if a movement was committed, {@code false} in other case.
      */
-    public void setMove(char player, int location) {
-        if(mBoard[location] == TicTacToeGame.OPEN_SPOT) {
+    public boolean setMove(char player, int location) {
+        boolean var = false;
+        if(player == mPlayerTurn && mBoard[location] == TicTacToeGame.OPEN_SPOT) {
             mBoard[location] = player;
+            if(mPlayerTurn == HUMAN_PLAYER) {
+                mPlayerTurn = COMPUTER_PLAYER;
+            } else {
+                mPlayerTurn = HUMAN_PLAYER;
+            }
+            var = true;
         }
+
+        return var;
     }
 
     /** Return the best move for the computer to make. You must call setMove()
@@ -222,6 +237,10 @@ public class TicTacToeGame {
 
     public void setDifficultyLevel(DifficultyLevel difficultyLevel) {
         mDifficultyLevel = difficultyLevel;
+    }
+
+    public char getBoardOccupant(int position) {
+        return mBoard[position];
     }
 
 

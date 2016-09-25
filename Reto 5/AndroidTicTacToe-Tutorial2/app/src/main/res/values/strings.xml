@@ -37,6 +37,10 @@
     <string name="difficulty_harder">Difícil</string>
     <string name="difficulty_expert">Nivel Dios</string>
 
+    <string name="sound_choose">Sonido</string>
+    <string name="sound_off">Desactivar</string>
+    <string name="sound_on">Activar</string>
+
     <string name="quit_question">¿Desea abadonar la diversión?</string>
     <string name="yes">Sí&#8230;</string>
     <string name="no">¡Ni loco!</string>
