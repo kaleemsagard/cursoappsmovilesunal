@@ -7,6 +7,7 @@ Este repositorio contiene los archivos de los talleres/retos elaborados a lo lar
 A continuación se indica el contenido del repositorio:
 
 -  **Entregas:** Este es el directorio que contiene las entregas del curso. Son archivos comprimidos que contienen todos elementos a entregar
+-  **Presentación Firefox OS:** Este directorio contiene una presentación sobre el sistema operativo para móviles Firefox OS y un libro de guía rápida. Por favor, dado el formato de la presentación (SVG), este archivo debe ser abierto desde el navegador (recomendamos Firefox).
 -  **Reto 0:** El primer taller/reto del curso. Consiste en la elaboración de un "Hola mundo" en la plataforma _Android_.
 -  **Reto 1:** Este reto consiste en crear la propuesta del proyecto final del curso: una aplicación móvil.
 -  **Reto 2:** Este reto trata sobre crear el prototipo de la apliación del proyecto final y sobre crear, además, el modelo canvas de dicha aplicación.
