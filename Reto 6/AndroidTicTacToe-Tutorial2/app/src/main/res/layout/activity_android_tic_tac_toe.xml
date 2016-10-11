@@ -88,7 +88,7 @@
         android:layout_height="wrap_content"
         android:text="@string/info"
         android:gravity="center_horizontal"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginBottom="20dp"
         android:textSize="20sp" />
 
