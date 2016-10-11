@@ -105,9 +105,6 @@ public class AndroidTicTacToeActivity extends AppCompatActivity {
             mGame.setBoardState(savedInstanceState.getCharArray("board"));
             mGameOver = savedInstanceState.getBoolean("gameOver");
             mInfoTextView.setText(savedInstanceState.getCharSequence("info"));
-            //mGame.setmHumanWins(savedInstanceState.getInt("humanWins"));
-            //mGame.setmBugdroidWins(savedInstanceState.getInt("computerWins"));
-            //mGame.setmTies(savedInstanceState.getInt("ties"));
             mGame.setmPlayerTurn(savedInstanceState.getChar("playerTurns"));
         }
         displayScores();
@@ -271,12 +268,8 @@ public class AndroidTicTacToeActivity extends AppCompatActivity {
 
         outState.putCharArray("board", mGame.getBoardState());
         outState.putBoolean("gameOver", mGameOver);
-        //outState.putInt("humanWins", Integer.valueOf(mGame.getmHumanWins()));
-        //outState.putInt("computerWins", Integer.valueOf(mGame.getmBugdroidWins()));
-        //outState.putInt("ties", Integer.valueOf(mGame.getmTies()));
         outState.putCharSequence("info", mInfoTextView.getText());
         outState.putChar("playerTurns", mGame.getmPlayerTurn());
-        //outState.putInt("difficultyLevel", mGame.getDifficultyLevel().ordinal());
     }
 
     @Override

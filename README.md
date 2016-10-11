@@ -1,4 +1,4 @@
-# Curso Desarrollo de aplicaciones moviles UNAL
+# Curso Desarrollo de aplicaciones móviles UNAL
 **Christian Ortega Loaiza**  
 
 Este repositorio contiene los archivos de los talleres/retos elaborados a lo largo del curso de Desarrollo de aplicaciones móviles de la Facultad de ingeniería de la Universidad Nacional de Colombia, en el segundo semestre del año 2016.
@@ -14,6 +14,7 @@ A continuación se indica el contenido del repositorio:
 -  **Reto 3:** Este reto trata sobre crear una apliación básica en la plataforma Android que permita al usuario jugar triqui contra la computadora.
 -  **Reto 4:** Este reto trata de mejorar el reto 3 incorporando más opciones de menú y con ello nueva lógica del juego.
 -  **Reto 5:** Este reto trata de mejorar el reto 4 incorporando imágenes personalizadas y sonidos para las acciones ejecutadas.
+-  **Reto 6:** Este reto trata de mejorar el reto 5 adicionandole a la aplicación la capacidad de almacenar el estado tanto para permitir rotar la pantalla del dispositivo sin perder el estado del juego, como para almacenar las preferencias (puntajes y nivel de dificultad).
 -  **LICENSE:** Archivo de licenciamiento del contenido de este repositorio.
 
 ## Recursos
