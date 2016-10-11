@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    tools:context="ceortegal.unal.edu.co.androidtictactoe_tutorial2.AndroidTicTacToeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/state_human"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" >
+            <TextView android:id="@+id/state_human_wins"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nombre_humano"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp" />
+            <TextView android:id="@+id/state_human_wins_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/puntaje_inicial"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:textSize="40sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/state_tie"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/state_human"
+            android:layout_toRightOf="@id/state_human"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" >
+            <TextView android:id="@+id/state_ties"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/empate"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"/>
+            <TextView android:id="@+id/state_ties_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/puntaje_inicial"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:textSize="40sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/state_bugdroid"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/state_tie"
+            android:layout_toRightOf="@id/state_tie"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+            <TextView android:id="@+id/state_bugdroid_wins"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nombre_computador"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp" />
+            <TextView android:id="@+id/state_bugdroid_wins_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/puntaje_inicial"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:textSize="40sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView android:id="@+id/information"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/info"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="20sp" />
+
+    <ceortegal.unal.edu.co.androidtictactoe_tutorial2.BoardView
+        android:id="@+id/play_grid"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal" />
+
+</LinearLayout>
