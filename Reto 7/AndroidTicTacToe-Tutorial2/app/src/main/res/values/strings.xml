@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Tic Tac Toe</string>
+    <string name="app_author">Christian Ortega</string>
+    <string name="app_author_ext">por Christian Ortega</string>
+    <string name="app_description">Juega triqui en tus ratos de ocio.
+        No lo hagas en la vía pública; podrías sufrir un accidente.
+        Elije los niveles de dificultad y no dejes que Bugdroid te patee el trasero.
+    </string>
+    <string name="settings">Ajustes</string>
+
+    <string name="play_grid_button_1">1</string>
+    <string name="play_grid_button_2">2</string>
+    <string name="play_grid_button_3">3</string>
+    <string name="play_grid_button_4">4</string>
+    <string name="play_grid_button_5">5</string>
+    <string name="play_grid_button_6">6</string>
+    <string name="play_grid_button_7">7</string>
+    <string name="play_grid_button_8">8</string>
+    <string name="play_grid_button_9">9</string>
+    <string name="info">Bienvenido(a)</string>
+
+    <string name="nombre_humano">Jugador</string>
+    <string name="nombre_computador">Bugdroid</string>
+
+    <string name="nuevo_juego">Nuevo juego</string>
+    <string name="turno_humano">Es tu turno</string>
+    <string name="turno_bugdroid">Es el turno de Bugdroid</string>
+    <string name="primer_turno_humano">Juegas primero</string>
+    <string name="estado_empate">Esto es un empate!</string>
+    <string name="estado_humano_gana">Eres el p**o amo!</string>
+    <string name="estado_bugdroid_gana">Intenta de nuevo, perdedor!</string>
+    <string name="empate">Empates</string>
+
+    <string name="puntaje_inicial">0</string>
+
+    <string name="difficulty_choose">Dificultad</string>
+    <string name="difficulty_easy">Fácil</string>
+    <string name="difficulty_harder">Difícil</string>
+    <string name="difficulty_expert">Nivel Dios</string>
+
+    <string name="sound_choose">Sonido</string>
+    <string name="sound_choose_summary">Activa o desactiva los efectos de sonido</string>
+    <string name="sound_off">Desactivar</string>
+    <string name="sound_on">Activar</string>
+
+    <string name="victory_message_choose">Mensaje de victoria</string>
+
+    <string name="quit_question">¿Desea abadonar la diversión?</string>
+    <string name="yes">Sí&#8230;</string>
+    <string name="no">¡Ni loco!</string>
+
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/new_game"
+        android:title="Nuevo juego" />
+    <item android:id="@+id/reset_game"
+        android:title="Reiniciar valores" />
+    <item android:id="@+id/settings"
+        android:title="Ajustes" />
+    <item android:id="@+id/about"
+        android:title="Acerca de..." />
+    <item android:id="@+id/quit"
+        android:title="Salir" />
+</menu>
