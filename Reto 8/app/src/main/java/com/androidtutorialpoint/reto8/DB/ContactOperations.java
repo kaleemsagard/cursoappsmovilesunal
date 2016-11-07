@@ -10,6 +10,7 @@ import android.util.Log;
 
 import com.androidtutorialpoint.reto8.Model.Contact;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 
@@ -83,6 +84,55 @@ public class ContactOperations {
     public List<Contact> getAllContacts() {
 
         Cursor cursor = database.query(ContactDBHandler.TABLE_CONTACTS, allColumns, null, null, null, null, null);
+
+        List<Contact> contacts = new ArrayList<>();
+        if(cursor.getCount() > 0) {
+            while(cursor.moveToNext()){
+                Contact contact = new Contact();
+                contact.setConId(cursor.getLong(cursor.getColumnIndex(ContactDBHandler.COLUMN_ID)));
+                contact.setName(cursor.getString(cursor.getColumnIndex(ContactDBHandler.COLUMN_NAME)));
+                contact.setUrl(cursor.getString(cursor.getColumnIndex(ContactDBHandler.COLUMN_URL)));
+                contact.setPhone(cursor.getString(cursor.getColumnIndex(ContactDBHandler.COLUMN_PHONE)));
+                contact.setEmail(cursor.getString(cursor.getColumnIndex(ContactDBHandler.COLUMN_EMAIL)));
+                contact.setDescription(cursor.getString(cursor.getColumnIndex(ContactDBHandler.COLUMN_DESCRIPTION)));
+                contact.setConsulting(cursor.getInt(cursor.getColumnIndex(ContactDBHandler.COLUMN_CONSULTING)));
+                contact.setDevelopment(cursor.getInt(cursor.getColumnIndex(ContactDBHandler.COLUMN_DEVELOPMENT)));
+                contact.setSoftwareFactory(cursor.getInt(cursor.getColumnIndex(ContactDBHandler.COLUMN_SOFTWARE_FACTORY)));
+                contacts.add(contact);
+            }
+        }
+
+        return contacts;
+    }
+
+    public List<Contact> getFilteredContacts(boolean isConsulting, boolean isDeveloper, boolean isSoftwareFactory) {
+
+        String restriction = "";
+        List<String> restrictionValues = new ArrayList<>();
+
+        if(isConsulting) {
+            restriction += ContactDBHandler.COLUMN_CONSULTING + "=?";
+            restrictionValues.add(String.valueOf(1));
+        }
+        if(isDeveloper) {
+            if(!restriction.isEmpty()){
+                restriction += " OR ";
+            }
+            restriction += ContactDBHandler.COLUMN_DEVELOPMENT + "=?";
+            restrictionValues.add(String.valueOf(1));
+        }
+        if(isSoftwareFactory) {
+            if(!restriction.isEmpty()) {
+                restriction += " OR ";
+            }
+            restriction += ContactDBHandler.COLUMN_SOFTWARE_FACTORY + "=?";
+            restrictionValues.add(String.valueOf(1));
+        }
+
+        Cursor cursor = database.query(ContactDBHandler.TABLE_CONTACTS,
+                allColumns,
+                restriction,
+                restrictionValues.toArray(new String[]{}), null, null, null, null);
 
         List<Contact> contacts = new ArrayList<>();
         if(cursor.getCount() > 0) {

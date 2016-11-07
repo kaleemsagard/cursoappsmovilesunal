@@ -17,4 +17,9 @@
     <string name="add_description">Servicios o productos</string>
     <string name="enter_contact_id">Introduce el ID de contacto</string>
     <string name="settings">Ajustes</string>
+    <string name="type_filter">Filtro</string>
+    <string name="type_consulting_filter">Consult.</string>
+    <string name="type_developer_filter">Desarrollo.</string>
+    <string name="type_softwarefactory_filter">Fabrica</string>
+    <string name="filter_contact">Filtrar contactos</string>
 </resources>
