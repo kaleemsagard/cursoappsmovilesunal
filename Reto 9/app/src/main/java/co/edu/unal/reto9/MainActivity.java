@@ -28,6 +28,7 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.UiSettings;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
@@ -99,7 +100,9 @@ public class MainActivity extends FragmentActivity
         // Add a marker in Colombia and move the camera
         LatLng initialPosition = new LatLng(INITIAL_LATITUD, INITIAL_LONGITUD);
         //mMap.addMarker(new MarkerOptions().position(initialPosition).title("Marcador de inicio"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(initialPosition));
+        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(initialPosition, getZoom()));
+        mMap.getUiSettings().setZoomControlsEnabled(false);
+        mMap.getUiSettings().setZoomGesturesEnabled(false);
     }
 
     @Override
@@ -237,7 +240,8 @@ public class MainActivity extends FragmentActivity
         });
     }
 
-    private void stopLocationUpdates() {if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION)
+    private void stopLocationUpdates() {
+        if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION)
             != PackageManager.PERMISSION_GRANTED
             && ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION)
             != PackageManager.PERMISSION_GRANTED) {
@@ -254,8 +258,15 @@ public class MainActivity extends FragmentActivity
     }
 
     private void updateUI() {
-        Log.i(TAG, String.format("Se actualiza la posición a: %1$s, %2$s", mCurrentLocation.getLatitude(),  mCurrentLocation.getLongitude()));
-        mMap.animateCamera(CameraUpdateFactory.newLatLng(
-                new LatLng(mCurrentLocation.getLatitude(), mCurrentLocation.getLongitude())));
+        if(mCurrentLocation != null) {
+            Log.i(TAG, String.format("Se actualiza la posición a: %1$s, %2$s", mCurrentLocation.getLatitude(),  mCurrentLocation.getLongitude()));
+            mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(
+                    new LatLng(mCurrentLocation.getLatitude(), mCurrentLocation.getLongitude()), getZoom()));
+
+        }
+    }
+
+    private float getZoom() {
+        return 15.0f;
     }
 }
