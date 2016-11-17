@@ -1,8 +1,46 @@
-<fragment xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:map="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/map"
-    android:name="com.google.android.gms.maps.SupportMapFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="co.edu.unal.reto9.MainActivity" />
+    android:orientation="vertical"
+    android:layout_marginLeft="@dimen/content_margin"
+    android:layout_marginRight="@dimen/content_margin"
+    tools:context="co.edu.unal.reto9.MainActivity">
+
+    <TextView
+        android:text="@string/radius_instructions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColorPrimary"  />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/radius_edittext"
+        android:text="@string/radius_default_value" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/view_map_button"
+        android:text="@string/view_map_button" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/place_title"
+        android:paddingTop="@dimen/title_top_margin"
+        android:textSize="@dimen/title_size"
+        android:textColor="@color/textColorPrimary" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/place_information"
+        android:text="@string/no_place_selected"
+        android:textColor="@color/textColorPrimary" />
+
+</LinearLayout>

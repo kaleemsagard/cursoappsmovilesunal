@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Reto 9</string>
     <string name="title_activity_main">Sitios de interés</string>
+    <string name="view_map_button">Ver mapa</string>
+    <string name="no_place_selected">No ha seleccionado un sitio aun</string>
+    <string name="place_title">Sitio seleccionado</string>
+    <string name="radius_instructions">Indica el radio de búsqueda (metros)</string>
+    <string name="radius_default_value">200</string>
 </resources>
