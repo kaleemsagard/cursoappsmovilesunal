@@ -1,0 +1,28 @@
+body {
+  background-color: beige;
+  margin: 0;
+}
+
+h1 {
+  background-color: tan;
+  color: whitesmoke;
+  margin: 0;
+  padding: 10px 20px;
+}
+
+p {
+  color: grey;
+  padding: 0 20px;
+}
+
+button {
+  background-color: cornflowerblue;
+  color: whitesmoke;
+  font-size: large;
+  text-transform: uppercase;
+  padding: 10px 30%;
+}
+
+.contenedor-boton {
+  text-align: center;
+}

@@ -18,6 +18,7 @@ A continuación se indica el contenido del repositorio:
 -  **Reto 7:** Este reto trata de mejorar el reto 6 moviendo algunas opciones de menú hacia una nueva actividad de preferencias.
 -  **Reto 8:** Este reto consiste en crear una aplicación sencilla que gestione una agenda de contactos de empresas de software.
 -  **Reto 9:** Este reto pretende que se establezca una conexión con Google Play Services para utilizar los servicios de georreferenciación de forma que se muestre al usuario los lugares de interés cercanos a su posición.
+-  **Reto 10:** Este reto propone la creación de una aplicación que consulte un endpoint restful del servicio de datos abiertos del Estado colombiano y muestre los resultados de dicha invocación.
 -  **LICENSE:** Archivo de licenciamiento del contenido de este repositorio.
 
 ## Recursos

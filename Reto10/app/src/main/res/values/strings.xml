@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Reto10</string>
+    <string name="fire_query_button">Consultar</string>
+    <string name="ciclo_vital">Ciclo vital:</string>
+    <string name="genero">Género:</string>
+    <string name="etnia">Etnia:</string>
+    <string name="total">Víctima(s)</string>
+</resources>

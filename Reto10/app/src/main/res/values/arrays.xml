@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="anio_array">
+        <item>2016</item>
+        <item>2015</item>
+        <item>2014</item>
+        <item>2013</item>
+        <item>2012</item>
+        <item>2011</item>
+        <item>2010</item>
+    </string-array>
+
+    <string-array name="departamento_array">
+        <item>ANTIOQUIA</item>
+        <item>BOLIVAR</item>
+        <item>CAUCA</item>
+        <item>CUNDINAMARCA</item>
+        <item>META</item>
+        <item>NARIÑO</item>
+        <item>PUTUMAYO</item>
+    </string-array>
+</resources>
