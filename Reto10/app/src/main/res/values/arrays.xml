@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="anio_array">
+        <item>Todos</item>
         <item>2016</item>
         <item>2015</item>
         <item>2014</item>
@@ -8,15 +9,98 @@
         <item>2012</item>
         <item>2011</item>
         <item>2010</item>
+        <item>2009</item>
+        <item>2008</item>
+        <item>2007</item>
+        <item>2006</item>
+        <item>2005</item>
+        <item>2004</item>
+        <item>2003</item>
+        <item>2002</item>
+        <item>2001</item>
+        <item>2000</item>
+        <item>1999</item>
+        <item>1998</item>
+        <item>1997</item>
+        <item>1996</item>
+        <item>1995</item>
+        <item>1994</item>
+        <item>1993</item>
+        <item>1992</item>
+        <item>1991</item>
+        <item>1990</item>
+        <item>1989</item>
+        <item>1988</item>
+        <item>1987</item>
+        <item>1986</item>
+        <item>1985</item>
+        <item>1984</item>
     </string-array>
 
     <string-array name="departamento_array">
-        <item>ANTIOQUIA</item>
-        <item>BOLIVAR</item>
-        <item>CAUCA</item>
-        <item>CUNDINAMARCA</item>
-        <item>META</item>
-        <item>NARIÑO</item>
-        <item>PUTUMAYO</item>
+        <item>Todos</item>
+        <!--item>Sin Información</item-->
+        <item>Amazonas</item>
+        <item>Antioquia</item>
+        <item>Arauca</item>
+        <item>Archipielago de San Andres, Providencia y Santa Catalina</item>
+        <item>Atlantico</item>
+        <item>Bogota, D.C.</item>
+        <item>Bolivar</item>
+        <item>Boyaca</item>
+        <item>Caldas</item>
+        <item>Caqueta</item>
+        <item>Casanare</item>
+        <item>Cauca</item>
+        <item>Cesar</item>
+        <item>Choco</item>
+        <item>Cordoba</item>
+        <item>Cundinamarca</item>
+        <item>Guainia</item>
+        <item>Guaviare</item>
+        <item>Huila</item>
+        <item>La Guajira</item>
+        <item>Magdalena</item>
+        <item>Meta</item>
+        <item>Nariño</item>
+        <item>Norte de Santander</item>
+        <item>Putumayo</item>
+        <item>Quindio</item>
+        <item>Risaralda</item>
+        <item>Santander</item>
+        <item>Sucre</item>
+        <item>Tolima</item>
+        <item>Valle del Cauca</item>
+        <item>Vaupes</item>
+        <item>Vichada</item>
+    </string-array>
+
+    <string-array name="ciclo_vital_array">
+        <item>Todos</item>
+        <item>entre 0 y 5</item>
+        <item>entre 6 y 11</item>
+        <item>entre 12 y 17</item>
+        <item>entre 18 y 28</item>
+        <item>entre 29 y 60</item>
+        <item>entre 61 y 100</item>
+        <item>No Informa</item>
+    </string-array>
+
+    <string-array name="genero_array">
+        <item>Todos</item>
+        <item>Hombre</item>
+        <item>LGBTI</item>
+        <item>Mujer</item>
+        <item>ND</item>
+    </string-array>
+
+    <string-array name="etnia_array">
+        <item>Todos</item>
+        <item>Ninguna</item>
+        <item>Gitano(a) ROM</item>
+        <item>Indigena</item>
+        <item>Negro(a) o Afrocolombiano(a)</item>
+        <item>Palenquero</item>
+        <item>Raizal del Archipielago de San Andres y Providencia</item>
     </string-array>
 </resources>

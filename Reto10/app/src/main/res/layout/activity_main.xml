@@ -27,16 +27,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/anio_spinner"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:spinnerMode="dialog" />
 
         <Spinner
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/departamento_spinner"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:spinnerMode="dialog" />
     </LinearLayout>
 
-    <!--LinearLayout
+    <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -60,7 +62,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/etnia_spinner"
             android:layout_weight="1" />
-    </LinearLayout-->
+    </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
@@ -76,34 +78,37 @@
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Desde "
+            android:layout_weight="1" />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="number"
             android:ems="10"
-            android:layout_weight="1"
+            android:layout_weight="100"
             android:id="@+id/rangoDesde"
-            android:hint="Desde"
-            android:text="0" />
+            android:hint="Primer registro"
+            android:text="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" y máximo "
+            android:layout_weight="1" />
 
         <EditText
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="number"
             android:ems="10"
-            android:layout_weight="1"
+            android:layout_weight="100"
             android:id="@+id/rangoHasta"
-            android:hint="Hasta"
+            android:hint="Cantidad a obtener"
             android:text="20" />
     </LinearLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:paddingLeft="@dimen/activity_horizontal_margin"
-        android:paddingRight="@dimen/activity_horizontal_margin"
-        android:id="@+id/textView" />
 
     <Button
         android:text="@string/fire_query_button"

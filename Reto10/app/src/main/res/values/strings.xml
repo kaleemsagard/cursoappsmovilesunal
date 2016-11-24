@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Reto10</string>
+    <string name="app_name">Registro Unico Víctimas</string>
     <string name="fire_query_button">Consultar</string>
     <string name="ciclo_vital">Ciclo vital:</string>
     <string name="genero">Género:</string>
